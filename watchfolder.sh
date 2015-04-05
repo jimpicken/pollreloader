@@ -4,7 +4,7 @@ if [ -d "$1" ]; then
 	FILE="$1"
 else
 	echo "No arguments given, watching and outputting to current directory."
-	echo "Example: ./watch.sh [watch directory] [pollfile director]"
+	echo "Example: ./watch.sh [watch directory] [pollfile directory]"
 	echo
 	FILE="."
 fi
