@@ -1,10 +1,12 @@
 # Pollreloader
 
-Some Javascript and Bash to produce a simple [LiveReload](http://livereload.com/) like behaviour on linux.
+Some Javascript and Bash to produce a simple [LiveReload](http://livereload.com/) like behaviour on linux. 
 
-Add pollreloader.js to your page template during testing, **don't run this on live sites**.
+Add `pollreloader.js` to your page template during testing, **don't run this on live sites**.
 
-On the browser `pollreloader.js` reads `/pollfile` once a second on the webserver and the `watchfolder.sh` script updates this file on changes.
+On the browser `pollreloader.js` reads `/pollfile` once a second and the `watchfolder.sh` script updates this file on changes.
+
+`watchfolder.sh` requires inotifywait, on Ubuntu this is in the `inotify-tools` package.
 
 By default `watchfolder.sh` watches the current directory for changes and creates a pollfile there. To change watch directory and pollfile output supply them as arguments:
 
