@@ -1,4 +1,4 @@
-# Pollreloader
+# Poll Reloader
 
 Some Javascript and Bash to produce a simple [LiveReload](http://livereload.com/) like behaviour on linux. 
 
