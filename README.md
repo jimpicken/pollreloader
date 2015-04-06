@@ -1,6 +1,6 @@
 # Poll Reloader
 
-Some Javascript and Bash to reload a browser window when your pages source files have been updated. Useful for trying CSS. Inspired by [LiveReload](http://livereload.com/), but for use with Linux. 
+Some Javascript and Bash to reload a browser window when your page's source files have been updated. Useful for trying CSS. Inspired by [LiveReload](http://livereload.com/), but for use with Linux. 
 
 Add `pollreloader.js` to your page template during testing, **don't run this on live sites**.
 
