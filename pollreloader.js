@@ -1,4 +1,6 @@
-var pollfile="pollfile"
+// pollfile url to watch
+var pollfile="/pollfile"
+
 var lastmodification;
 
 function makerequest() {
@@ -13,7 +15,7 @@ function makerequest() {
 		}
 	}
 	var d = new Date();
-	var pollurl = "/" + pollfile + "?" + d.getTime();
+	var pollurl = pollfile + "?" + d.getTime();
 	xmlhttp.open("GET", pollurl);
 	xmlhttp.send();
 	window.setTimeout(makerequest, 1000);
