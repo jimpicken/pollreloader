@@ -4,7 +4,7 @@ Some Javascript and Bash to produce a simple [LiveReload](http://livereload.com/
 
 Add `pollreloader.js` to your page template during testing, **don't run this on live sites**.
 
-On the browser `pollreloader.js` reads `/pollfile` once a second and the `watchfolder.sh` script updates this file on changes.
+On the browser `pollreloader.js` reads `/pollfile` once a second, when it detects a change the browser is then reloaded. A `watchfolder.sh` script is used to update the pollfile on changes.
 
 `watchfolder.sh` requires inotifywait, on Ubuntu this is in the `inotify-tools` package.
 
