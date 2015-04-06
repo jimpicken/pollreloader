@@ -17,6 +17,7 @@ fi
 
 while inotifywait -e modify,move,create,delete -r "$FILE"; do
 	sleep 1s
+	# Update the following command to suit your environment
 	date +%s > "$POLLDIR"/pollfile
 done
 
