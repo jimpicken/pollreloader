@@ -16,7 +16,7 @@ function makerequest() {
 	var pollurl = "/" + pollfile + "?" + d.getTime();
 	xmlhttp.open("GET", pollurl);
 	xmlhttp.send();
-	window.setTimeout(makerequest, 500);
+	window.setTimeout(makerequest, 1000);
 };
 
 function handleResponse(text) {
