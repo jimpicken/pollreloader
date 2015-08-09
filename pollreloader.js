@@ -31,4 +31,4 @@ function handleResponse(text) {
 	}
 }
 
-window.onload = makerequest;
+(makerequest());
