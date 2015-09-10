@@ -15,14 +15,17 @@ function makerequest() {
 		}
 	}
 	var d = new Date();
+	//adding a date to the URL prevents caching of the pollfile
 	var pollurl = pollfile + "?" + d.getTime();
 	xmlhttp.open("GET", pollurl);
 	xmlhttp.send();
+	//poll every second
 	window.setTimeout(makerequest, 1000);
 };
 
 function handleResponse(text) {
 	if (! lastmodification) {
+		//initialise lastmodification
 		lastmodification = text;
 	} else {
 		if (lastmodification !== text) {
